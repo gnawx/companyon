@@ -1,0 +1,191 @@
+/* Custom CSS for Tables */
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
+
+/* Custom CSS for Container */
+#distribution {
+  float: left;
+  position: fixed;
+  max-width: 19.5%;
+  z-index: 10;
+}
+
+/* Custom CSS for Autocomplete UI */
+.ui-autocomplete-category {
+  font-weight: bold;
+  padding: .2em .4em;
+  margin: .8em 0 .2em;
+  line-height: 1.5;
+}
+
+/* Custom CSS for State Alert */
+#statequery {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+/* Custom CSS for Syntax Alert */
+#syntaxalert {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+/* Custom CSS for Pop Up Fonts */
+a.popupfont {
+  color: white;
+  text-decoration: underline;
+}
+
+a.popupfont:active {
+  color: #ffffff;
+}
+
+a.popupfont:visited {
+  color: #ffffff;
+}
+
+a.popupfont:hover {
+  color: #cacaca;
+}
+
+/* Custom CSS for Alert Fonts */
+a.alertfont {
+  color: rgb(247, 150, 91);
+  text-decoration: underline;
+}
+
+a.alertfont:active {
+  color: rgb(247, 150, 91);
+}
+
+a.alertfont:visited {
+  color: rgb(247, 150, 91);
+}
+
+a.alertfont:hover {
+  color: #c04600;
+}
+
+/* Custom CSS for Distribution Fonts */
+a.addword {
+  color: #808080;
+  text-decoration: underline;
+}
+
+a.addword:active {
+  color: #808080;
+}
+
+a.addword:visited {
+  color: #808080;
+}
+
+a.addword:hover {
+  color: #505050;
+}
+
+/* --- Custom CSS for Mouseover Pop-Up Windows --- */
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup (appears on right) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  height: auto;
+  max-height: 50px;
+  overflow-x: hidden;
+  background-color: rgb(141, 141, 141);
+  color: #fff;
+  text-align: center;
+  border-radius: 15px 15px 15px 0px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  left: 125%;
+  margin-left: -10px;
+}
+
+/* Popup Info */
+.popup .popupinfo {
+  font-size: 0.7em;
+  visibility: hidden;
+  width: 570px;
+  height: auto;
+  max-height: 50px;
+  background-color: #337ab7;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 140%;
+  left: 125%;
+  margin-left: -210px;
+}
+
+/* Popup Info Arrow */
+.popup .popupinfo::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 35%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #337ab7 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Responsive Layout Attempt */
+@media only screen and (max-width: 610px) {
+  #optioncheckbox {width: 230px}
+  fieldset.optionlist {font-size: smaller}
+  #newlabel {display: none}
+  #srclabel {display: none}
+  #newplus {font-size: smaller}
+  #statequery {font-size: small}
+  #content {font-size: small}
+  h4.panel-title {font-size: smaller}
+  .popup .popupinfo {
+    bottom: 120%;
+    width: 200px;
+    left: -300%;
+    margin-left: -130px;
+  }
+  .popup .popupinfo::after {
+    left: 83.5%;
+    margin-left: 0px;
+    border-width: 4px;
+  }
+}
